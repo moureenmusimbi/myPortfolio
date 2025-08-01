@@ -1,11 +1,24 @@
 import React from 'react';
 import './Navbar.css';
+import logo from '../assets/logo.png'; // Adjusted import path
 
 const Navbar = () => {
     return ( <
         div className = 'navbar' >
         <
-        h1 > My Portfolio < /h1> <
+        h1 >
+        <
+        img src = { logo }
+        alt = 'Logo'
+        style = {
+            {
+                width: '90px', // Adjust width as needed
+                height: '90px',
+                objectFit: 'contain'
+            }
+        }
+        /> < /
+        h1 > <
         ul className = 'nav-menu' >
         <
         li > Home < /li> <
@@ -13,12 +26,10 @@ const Navbar = () => {
         li > Services < /li> <
         li > Portfolio < /li> <
         li > Contact < /li> < /
-        ul >
-        <
+        ul > <
         div className = 'nav-connect' >
         Connect With Me <
-        /div> <
-        /
+        /div> < /
         div >
     );
 };

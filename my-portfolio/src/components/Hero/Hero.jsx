@@ -15,7 +15,7 @@ const Hero = () => {
                 borderRadius: '50%',
                 objectFit: 'cover',
                 border: '2px solid #ccc',
-                imageRendering: 'auto'
+                imageRendering: 'auto',
             }
         }
         /> <
@@ -27,7 +27,9 @@ const Hero = () => {
         p >
         I 'm Moureen Musimbi, a creative and detail-driven professional specializing in graphic design,
         frontend development, and IT, passionate about turning ideas into impactful digital experiences. <
-        /p> <
+        /p>
+
+        <
         div className = 'hero-action' >
         <
         div className = 'hero-connect' > Connect with me < /div> <
