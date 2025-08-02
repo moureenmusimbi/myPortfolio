@@ -7,7 +7,7 @@ const Contact = () => {
         <
         div className = "contact-title" >
         <
-        h1 > Let 's Connect</h1> < /
+        h1 > Let 's Connect Test Build</h1> < /
         div >
 
         <
