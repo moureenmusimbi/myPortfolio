@@ -30,6 +30,7 @@
   text-align: center;
   font-size: 24px;
   line-height: 40px;
+  color: #ccc;
 }
 
 .hero-action {
@@ -49,6 +50,7 @@
   background: linear-gradient(264deg, #df8988 -5.99%, #b415ff 100%);
   cursor: pointer;
   color: white;
+  text-decoration: none;
 }
 
 .hero-resume {
@@ -56,6 +58,8 @@
   border-radius: 50px;
   border: 2px solid #fff;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
 .hero-connect:hover {
@@ -66,13 +70,7 @@
   border-color: #b415ff;
 }
 
-.hero-connect,
-.hero-resume {
-  text-decoration: none;
-  color: white;
-}
-
-/* ✅ Media query for tablets and mobile */
+/* Tablets and medium screens */
 
 @media (max-width: 768px) {
   .hero h1 {
@@ -90,20 +88,30 @@
   }
   .hero-connect,
   .hero-resume {
-    padding: 15px 30px;
+    padding: 18px 35px;
     font-size: 16px;
   }
 }
 
+/* Small phones and devices ≤480px */
+
 @media (max-width: 480px) {
+  .hero img {
+    margin-top: 100px;
+    max-width: 260px;
+  }
   .hero h1 {
-    font-size: 32px;
+    font-size: 30px;
+    width: 95%;
   }
   .hero p {
     font-size: 16px;
+    line-height: 28px;
+    width: 95%;
   }
-  .hero img {
-    margin-top: 100px;
-    max-width: 280px;
+  .hero-connect,
+  .hero-resume {
+    padding: 14px 28px;
+    font-size: 15px;
   }
 }

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -16,11 +20,13 @@
 .nav-menu li a {
   text-decoration: none;
   color: white;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.nav-menu li a:hover {
+.nav-menu li a:hover,
+.nav-menu li a:focus {
   color: #da7c25;
+  transform: scale(1.05);
 }
 
 .nav-connect a {
@@ -36,6 +42,14 @@
 
 .nav-connect a:hover {
   transform: scale(1.05);
+}
+
+/* ✅ Optional: Accessibility focus styles */
+
+.nav-menu li a:focus-visible,
+.nav-connect a:focus-visible {
+  outline: 2px solid #da7c25;
+  outline-offset: 4px;
 }
 
 /* ✅ Tablet Responsive */

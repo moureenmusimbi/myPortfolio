@@ -16,12 +16,12 @@ const Services = () => {
         style = {
             {
                 width: '90px',
-                height: '90px',
+                height: '95px',
                 objectFit: 'contain',
             }
         }
-        /> <
-        /div>
+        /> < /
+        div >
 
         <
         div className = "services-container" > {
@@ -38,12 +38,12 @@ const Services = () => {
                 img src = { arrow_img1 }
                 alt = "arrow icon" / >
                 <
-                /div> <
-                /div>
+                /div> < /
+                div >
             ))
         } <
-        /div> <
-        /div>
+        /div> < /
+        div >
     );
 };
 

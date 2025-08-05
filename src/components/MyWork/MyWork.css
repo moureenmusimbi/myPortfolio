@@ -54,17 +54,50 @@
   margin: 0;
 }
 
+/* ✅ Tablet (≤900px) */
+
 @media (max-width: 900px) {
   .work-cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* ✅ Mobile (≤600px) */
+
 @media (max-width: 600px) {
-  .work-cards {
-    grid-template-columns: 1fr;
+  .my-work {
+    padding: 60px 15px;
   }
   .my-work h2 {
     font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .work-cards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .work-card img {
+    height: 180px;
+  }
+  .work-card p {
+    font-size: 16px;
+    padding: 0.75rem;
+  }
+}
+
+/* ✅ Small Phones (≤400px) */
+
+@media (max-width: 400px) {
+  .my-work {
+    padding: 40px 10px;
+  }
+  .my-work h2 {
+    font-size: 32px;
+  }
+  .work-card img {
+    height: 160px;
+  }
+  .work-card p {
+    font-size: 15px;
   }
 }
