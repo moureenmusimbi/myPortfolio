@@ -1,67 +1,77 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
 }
 
 .nav-menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 60px;
-    font-size: 20px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
 }
 
-.nav-connect {
-    padding: 20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1);
-    font-size: 22px;
-    cursor: pointer;
-    transition: 0.5s;
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
 }
 
-.nav-connect:hover {
-    transform: scale(1.05);
+.nav-menu li a:hover {
+  color: #da7c25;
 }
 
+.nav-connect a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1);
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-connect a:hover {
+  transform: scale(1.05);
+}
 
 /* ✅ Tablet Responsive */
 
 @media (max-width: 768px) {
-    .navbar {
-        margin: 20px 40px;
-        flex-direction: column;
-        gap: 15px;
-    }
-    .nav-menu {
-        gap: 30px;
-        font-size: 18px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .nav-connect {
-        font-size: 18px;
-        padding: 16px 32px;
-    }
+  .navbar {
+    margin: 20px 40px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-menu {
+    gap: 30px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-connect a {
+    font-size: 18px;
+    padding: 16px 32px;
+  }
 }
-
 
 /* ✅ Mobile Responsive */
 
 @media (max-width: 480px) {
-    .navbar {
-        margin: 15px 20px;
-    }
-    .nav-menu {
-        flex-direction: column;
-        gap: 15px;
-        font-size: 16px;
-        align-items: center;
-    }
-    .nav-connect {
-        font-size: 16px;
-        padding: 14px 28px;
-    }
+  .navbar {
+    margin: 15px 20px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    align-items: center;
+  }
+  .nav-connect a {
+    font-size: 16px;
+    padding: 14px 28px;
+  }
 }

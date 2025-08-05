@@ -21,20 +21,22 @@ const Hero = () => {
         /> <
         h1 >
         <
-        span > I 'm Moureen Musimbi, </span>
-        a graphic designer & frontend developer based in Nairobi, Kenya. <
-        /h1> <
+        span > I 'm Moureen Musimbi, < /span> a graphic designer & frontend developer based in Nairobi, Kenya. < /
+        h1 > <
         p >
-        I 'm Moureen Musimbi, a creative and detail-driven professional specializing in graphic design,
+        I & apos; m Moureen Musimbi, a creative and detail - driven professional specializing in graphic design,
         frontend development, and IT, passionate about turning ideas into impactful digital experiences. <
         /p>
 
         <
         div className = 'hero-action' >
         <
-        div className = 'hero-connect' > Connect with me < /div> <
-        div className = 'hero-resume' > My resume < /div> <
-        /div> <
+        a href = "#contact"
+        className = "hero-connect" > Connect with me < /a> <
+        a href = "/resume.pdf"
+        className = "hero-resume"
+        download > My resume < /a> < /
+        div > <
         /div>
     );
 };

@@ -7,25 +7,31 @@ import MyWork from './components/MyWork/MyWork';
 import Contact from './components/Contact/Contact';
 
 const App = () => {
-    return ( <
-        div >
-        <
-        Navbar / >
-        <
-        Hero / >
-        <
-        About / >
-        <
-        Services / >
-        <
-        MyWork / >
+  return (
+    <div className="App">
+      <Navbar />
 
-        <
-        Contact / >
+      <section id="home">
+        <Hero />
+      </section>
 
-        <
-        /div>
-    );
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="services">
+        <Services />
+      </section>
+
+      <section id="portfolio">
+        <MyWork />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+    </div>
+  );
 };
 
 export default App;
