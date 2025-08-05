@@ -1,25 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="navbar">
       {/* Logo */}
-      <h1>
-        <img
-          src={logo}
-          alt="Logo"
-          style={{
-            width: '90px',
-            height: '90px',
-            objectFit: 'contain'
-          }}
-        />
-      </h1>
+      <div className="logo">
+        <img src={logo} alt="Logo" />
+      </div>
+
+      {/* Hamburger Menu (only shows on small screens) */}
+      <div className="menu-toggle" onClick={toggleMenu}>
+        ☰
+      </div>
 
       {/* Navigation Menu */}
-      <ul className="nav-menu">
+      <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#services">Services</a></li>

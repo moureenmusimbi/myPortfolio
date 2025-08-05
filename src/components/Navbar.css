@@ -2,12 +2,23 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Base Navbar Styling */
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 20px 170px;
+  flex-wrap: wrap;
 }
+
+.logo img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Menu Items */
 
 .nav-menu {
   display: flex;
@@ -20,22 +31,22 @@ html {
 .nav-menu li a {
   text-decoration: none;
   color: white;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.nav-menu li a:hover,
-.nav-menu li a:focus {
+.nav-menu li a:hover {
   color: #da7c25;
-  transform: scale(1.05);
 }
+
+/* Connect Button */
 
 .nav-connect a {
   text-decoration: none;
   color: white;
-  padding: 20px 40px;
+  padding: 12px 24px;
   border-radius: 50px;
   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1);
-  font-size: 22px;
+  font-size: 18px;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -44,47 +55,49 @@ html {
   transform: scale(1.05);
 }
 
-/* ✅ Optional: Accessibility focus styles */
+/* Hide toggle button by default */
 
-.nav-menu li a:focus-visible,
-.nav-connect a:focus-visible {
-  outline: 2px solid #da7c25;
-  outline-offset: 4px;
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 }
 
-/* ✅ Tablet Responsive */
+/* ✅ Responsive: 768px and below */
 
 @media (max-width: 768px) {
   .navbar {
     margin: 20px 40px;
-    flex-direction: column;
-    gap: 15px;
   }
+  /* Show hamburger */
+  .menu-toggle {
+    display: block;
+  }
+  /* Hide nav menu by default */
   .nav-menu {
-    gap: 30px;
-    font-size: 18px;
-    flex-wrap: wrap;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  /* Show nav menu when active */
+  .nav-menu.active {
+    display: flex;
+  }
+  .nav-connect {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    /* ✅ Added */
     justify-content: center;
+    /* ✅ Added */
   }
   .nav-connect a {
-    font-size: 18px;
-    padding: 16px 32px;
-  }
-}
-
-/* ✅ Mobile Responsive */
-
-@media (max-width: 480px) {
-  .navbar {
-    margin: 15px 20px;
-  }
-  .nav-menu {
-    flex-direction: column;
-    gap: 15px;
-    font-size: 16px;
-    align-items: center;
-  }
-  .nav-connect a {
+    width: 100%;
+    text-align: center;
     font-size: 16px;
     padding: 14px 28px;
   }

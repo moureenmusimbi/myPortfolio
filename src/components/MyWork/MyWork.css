@@ -47,11 +47,13 @@
 }
 
 .work-card p {
-  padding: 1rem;
-  font-weight: 500;
   font-size: 18px;
-  color: #ccc;
-  margin: 0;
+  font-weight: 500;
+  color: #333;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.4;
 }
 
 /* ✅ Tablet (≤900px) */
@@ -77,7 +79,11 @@
     gap: 30px;
   }
   .work-card img {
+    width: 100vw;
     height: 180px;
+    margin-left: -20px;
+    border-radius: 0;
+    object-fit: cover;
   }
   .work-card p {
     font-size: 16px;
@@ -89,15 +95,33 @@
 
 @media (max-width: 400px) {
   .my-work {
-    padding: 40px 10px;
+    padding: 40px 20px;
   }
-  .my-work h2 {
-    font-size: 32px;
+  .work-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .work-card {
+    max-width: 100%;
+    padding: 0;
+    /* Remove padding to allow full-width image */
+    border-radius: 0;
+    box-shadow: none;
   }
   .work-card img {
-    height: 160px;
+    width: 100vw;
+    /* Full viewport width */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Crop to fill */
+    border-radius: 0;
+    margin: 0;
   }
   .work-card p {
-    font-size: 15px;
+    font-size: 16px;
+    padding: 10px;
+    background: #fff;
+    text-align: center;
   }
 }

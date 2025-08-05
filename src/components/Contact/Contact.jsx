@@ -49,14 +49,14 @@ const Contact = () => {
         <
         div className = "contact-title" >
         <
-        h1 > Let 's Connect - Test Build</h1> <
-        /div>
+        h1 > Let 's Connect  Test Build</h1> < /
+        div >
 
         <
         p className = "contact-description" >
         Whether it 's about booking a salon session, graphic design, beauty branding,
-        or a tech collaboration— I 'm always open to meaningful conversations. <
-        /p>
+        or a tech collaboration— I 'm always open to meaningful conversations. < /
+        p >
 
         <
         div className = "contact-info" >
@@ -64,18 +64,18 @@ const Contact = () => {
         div className = "contact-card" >
         <
         h3 > Email < /h3> <
-        p > musimbimoureen @gmail.com < /p> <
-        /div> <
+        p > musimbimoureen @gmail.com < /p> < /
+        div > <
         div className = "contact-card" >
         <
         h3 > Phone < /h3> <
-        p > +254 793 857 370 < /p> <
-        /div> <
+        p > +254 793 857 370 < /p> < /
+        div > <
         div className = "contact-card" >
         <
         h3 > Location < /h3> <
-        p > Nairobi, Kenya < /p> <
-        /div> <
+        p > Nairobi, Kenya < /p> < /
+        div > <
         /div>
 
         <
@@ -114,8 +114,8 @@ const Contact = () => {
                 p className = "success-message" > { successMessage } < /p>
             )
         } <
-        /form> <
-        /div>
+        /form> < /
+        div >
     );
 };
 
